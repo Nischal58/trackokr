@@ -11,10 +11,11 @@
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" id="signup-link" href="/signup">Sign up</a>
+                                <router-link class="nav-link"  :to="{name:'signup'}">Sign up</router-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="signin-link" href="/signin">Login</a>
+                            <router-link class="nav-link"  :to="{name:'login'}">Login</router-link>
+
                             </li>
                         </ul>
                     </div>
@@ -38,8 +39,8 @@
                                         </p>
                                         <div class="col-xl-4 button-container">
                                             <a class="signup-button" href="/signup">
-                                                <button type="submit"
-                                                    class="btn btn-block btn-lg btn-primary btn-signup">Sign Up</button>
+                                                <router-link
+                                                    class="btn btn-block btn-lg btn-primary btn-signup" :to="{name:'signup'}">Sign Up</router-link>
                                             </a>
                                         </div>
                                     </div>

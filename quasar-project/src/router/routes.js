@@ -1,3 +1,5 @@
+import Signup from '../components/Signup.vue'
+import Login from '../components/Login.vue'
 
 const routes = [
   {
@@ -6,6 +8,16 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') }
     ]
+  },
+  {
+    path: '/signup',
+    name:'signup',
+    component:Signup
+  },
+  {
+    path: '/login',
+    name:'login',
+    component:Login
   },
 
   // Always leave this as last one,
